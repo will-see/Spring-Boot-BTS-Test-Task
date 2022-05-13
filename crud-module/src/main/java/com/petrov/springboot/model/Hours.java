@@ -7,10 +7,8 @@ import javax.persistence.*;
 @Data
 @Entity
 @Table(name = "hours")
-public class Hours {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+public class Hours extends BaseEntity{
+
     @Column(name = "start_time")
     private int startTime;
     @Column(name = "end_time")
